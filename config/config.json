@@ -1,0 +1,98 @@
+{
+  "VERSION": "1.0",
+  "ROOM_MODEL": "assets/models/room.glb",
+  "FIT_MODE": "CONTAIN",
+  "MIN_WORKS": 10,
+  "WORKS": [
+    {
+      "ID": "WORK_01",
+      "HOOK": "HOOK_01",
+      "FRAME": "FRM_01",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_01.jpg",
+      "TITLE": "Автопортрет",
+      "TEXT": "Автопортрет по дисципліні «Цифровий рисунок»."
+    },
+    {
+      "ID": "WORK_02",
+      "HOOK": "HOOK_02",
+      "FRAME": "FRM_02",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_02.jpg",
+      "TITLE": "Анатомія, скелет",
+      "TEXT": "Завдання з дисципліни «Цифровий рисунок»."
+    },
+    {
+      "ID": "WORK_03",
+      "HOOK": "HOOK_03",
+      "FRAME": "FRM_03",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_03.jpg",
+      "TITLE": "Замальовки ніг",
+      "TEXT": "Авторська графічна композиція."
+    },
+    {
+      "ID": "WORK_04",
+      "HOOK": "HOOK_04",
+      "FRAME": "FRM_04",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_04.jpg",
+      "TITLE": "Замальовки рук",
+      "TEXT": "Авторська графічна композиція."
+    },
+    {
+      "ID": "WORK_05",
+      "HOOK": "HOOK_05",
+      "FRAME": "FRM_05",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_05.jpg",
+      "TITLE": "Лінія",
+      "TEXT": "Композиційна вправа на тему «Лінія». Дослідження виразних можливостей лінії як основного формотворчого засобу."
+    },
+    {
+      "ID": "WORK_06",
+      "HOOK": "HOOK_06",
+      "FRAME": "FRM_06",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_06.jpg",
+      "TITLE": "Площина / Пляма",
+      "TEXT": "Композиційна вправа на тему «Площина / Пляма». Робота з тональними співвідношеннями та масами на площині."
+    },
+    {
+      "ID": "WORK_07",
+      "HOOK": "HOOK_07",
+      "FRAME": "FRM_07",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_07.jpg",
+      "TITLE": "Портрет",
+      "TEXT": "Портрет з фотографії з дисципліни «Скетчинг»."
+    },
+    {
+      "ID": "WORK_08",
+      "HOOK": "HOOK_08",
+      "FRAME": "FRM_08",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_08.jpg",
+      "TITLE": "Скетч камери",
+      "TEXT": "Промисловий дизайн у вигляді ескізу."
+    },
+    {
+      "ID": "WORK_09",
+      "HOOK": "HOOK_09",
+      "FRAME": "FRM_09",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_09.jpg",
+      "TITLE": "Цифрова побудова від плями",
+      "TEXT": "Робота по дисципліні «Скетчинг»."
+    },
+    {
+      "ID": "WORK_10",
+      "HOOK": "HOOK_10",
+      "FRAME": "FRM_10",
+      "FORMAT": "SQR",
+      "IMAGE": "assets/works/work_10.jpg",
+      "TITLE": "Череп, анатомія",
+      "TEXT": "Скетч анатомії черепа."
+    }
+  ]
+}

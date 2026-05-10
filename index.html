@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Віртуальна галерея / портфоліо</title>
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a-scene
+    background="color: #1a1a1a"
+    renderer="antialias: true; colorManagement: true; physicallyCorrectLights: true; toneMapping: ACESFilmic; exposure: 1.0"
+    cursor="rayOrigin: mouse"
+    raycaster="objects: .clickable; far: 50">
+
+    <a-assets timeout="30000">
+      <a-asset-item id="room" src="assets/models/room.glb"></a-asset-item>
+      <img id="img-work_01" src="assets/works/work_01.jpg" crossorigin="anonymous">
+      <img id="img-work_02" src="assets/works/work_02.jpg" crossorigin="anonymous">
+      <img id="img-work_03" src="assets/works/work_03.jpg" crossorigin="anonymous">
+      <img id="img-work_04" src="assets/works/work_04.jpg" crossorigin="anonymous">
+      <img id="img-work_05" src="assets/works/work_05.jpg" crossorigin="anonymous">
+      <img id="img-work_06" src="assets/works/work_06.jpg" crossorigin="anonymous">
+      <img id="img-work_07" src="assets/works/work_07.jpg" crossorigin="anonymous">
+      <img id="img-work_08" src="assets/works/work_08.jpg" crossorigin="anonymous">
+      <img id="img-work_09" src="assets/works/work_09.jpg" crossorigin="anonymous">
+      <img id="img-work_10" src="assets/works/work_10.jpg" crossorigin="anonymous">
+    </a-assets>
+
+    <!-- Lights -->
+    <a-entity light="type: ambient; color: #FFFFFF; intensity: 0.6"></a-entity>
+    <a-entity light="type: directional; color: #FFFFFF; intensity: 0.7" position="3 6 3"></a-entity>
+    <a-entity light="type: directional; color: #FFFFFF; intensity: 0.3" position="-3 6 -3"></a-entity>
+
+    <!-- Room model -->
+    <a-entity id="room-entity" gltf-model="#room" position="0 0 0"></a-entity>
+
+    <!-- Container for dynamically placed artworks -->
+    <a-entity id="artworks"></a-entity>
+
+    <!-- Player rig — spawned on the -X side of the partition, at eye level above the floor (floor Y=1.48, +1.6m) -->
+    <a-entity id="rig" position="-8 3.1 0" rotation="0 -90 0">
+      <a-camera
+        look-controls="pointerLockEnabled: false"
+        wasd-controls="acceleration: 30; fly: false">
+      </a-camera>
+    </a-entity>
+  </a-scene>
+
+  <!-- Info panel (right side) -->
+  <aside id="info-panel" class="hidden" aria-hidden="true">
+    <button id="panel-close" type="button" aria-label="Закрити">×</button>
+    <h2 id="panel-title"></h2>
+    <p id="panel-text"></p>
+  </aside>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div id="hud-controls">
+      <strong>Керування:</strong>
+      <span>WASD / стрілки — рух</span>
+      <span>Миша — огляд</span>
+      <span>Клік по роботі — опис</span>
+      <span>Esc — закрити панель</span>
+    </div>
+    <div id="hud-loader">Завантаження…</div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
